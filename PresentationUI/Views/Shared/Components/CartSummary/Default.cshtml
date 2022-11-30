@@ -1,0 +1,17 @@
+﻿@model CartSummaryViewModel
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<ul class="dropdown-menu">
+    @foreach (var item in Model.Cart.CartLines)
+    {
+        <li><a><span class="badge bg-primary">@item.Product.ProductName</span> <span class="badge bg-secondary">@item.Quantity</span></a></li>
+    }
+    <li role="separator" class="divider"></li>
+    <li>
+        <a><span class="glypicon glypicon-align-left glypicon-shopping-cart" aria-hidden="true"><span class="badge bg-warning">Toplam Ücret:</span></span><span class="fw-bold text-color-success">@Model.Cart.Total $</span></a>
+    </li>
+
+    <li role="separator" class="divider"></li>
+    <li>
+        <a class="btn btn-outline-primary" asp-controller="Cart" asp-action="List">Go to Cart Details</a>
+    </li>
+</ul>

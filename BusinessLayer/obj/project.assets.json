@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "DataAccessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EntitiesLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        }
+      },
+      "EntitiesLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/EntitiesLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntitiesLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DataAccessLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessLayer/DataAccessLayer.csproj",
+      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
+    },
+    "EntitiesLayer/1.0.0": {
+      "type": "project",
+      "path": "../EntitiesLayer/EntitiesLayer.csproj",
+      "msbuildProject": "../EntitiesLayer/EntitiesLayer.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "DataAccessLayer >= 1.0.0",
+      "EntitiesLayer >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\gulbe\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\gulbe\\OneDrive\\Masaüstü\\final1\\REA-FinalTask\\BusinessLayer\\BusinessLayer.csproj",
+      "projectName": "BusinessLayer",
+      "projectPath": "C:\\Users\\gulbe\\OneDrive\\Masaüstü\\final1\\REA-FinalTask\\BusinessLayer\\BusinessLayer.csproj",
+      "packagesPath": "C:\\Users\\gulbe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gulbe\\OneDrive\\Masaüstü\\final1\\REA-FinalTask\\BusinessLayer\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\gulbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\gulbe\\OneDrive\\Masaüstü\\final1\\REA-FinalTask\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\gulbe\\OneDrive\\Masaüstü\\final1\\REA-FinalTask\\DataAccessLayer\\DataAccessLayer.csproj"
+            },
+            "C:\\Users\\gulbe\\OneDrive\\Masaüstü\\final1\\REA-FinalTask\\EntitiesLayer\\EntitiesLayer.csproj": {
+              "projectPath": "C:\\Users\\gulbe\\OneDrive\\Masaüstü\\final1\\REA-FinalTask\\EntitiesLayer\\EntitiesLayer.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
